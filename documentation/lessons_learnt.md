@@ -41,4 +41,19 @@ We will use "Fixed #1" or whatever issue number in the commit comment to auto-cl
 testing again - "Fixes #1" did not auto-close the issue in github
 is the keyword "fixes" case-sensitive?
 
+Note that the auto-close of the issue will occur when the branch is merged back into master.
+
+8. Anita found the changes she made to feature_set2 in feature_set1. We are not sure how that happened as she has been working in feature_set2 branch.
+To recover feature_set1 to a good enough point, we did:
+git checkout feature_set1
+git stash
+feature_set1 was then back to good core skeleton set of files
+Anita then did a git pull command to get remote feature_set1 down to local repo feature_set1
+In hindsight, she should have done a git fetch for feature_set1 to avoid any fetch & auto merge on feature_set1.
+(The fetch and auto merge (i.e. git pull) would have incorporated any changes she (mistakenly) made to feature_set1and would have kept that in her local repo.
+- Lesson: use git pull the first time you pull a branch
+but use git fetch for every other time you bring changes down to local repo from github
+so that any merges are reported and left to the developer to decide whether to accept or decline the merge
+Refer to good article on this at ( http://longair.net/blog/2009/04/16/git-fetch-and-merge/ )
+"a git pull does both the fetch and merge without giving you a chance to review the merges & accept or decline them."
 
