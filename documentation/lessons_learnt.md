@@ -38,5 +38,7 @@ Of course, the styling applied at run-time is in order of specificity.
 how to auto-close an issue
 We will use "Fixed #1" or whatever issue number in the commit comment to auto-close the issue in github.
 
-testing again
+testing again - "Fixes #1" did not auto-close the issue in github
+is the keyword "fixes" case-sensitive?
+
 
