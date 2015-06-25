@@ -57,3 +57,16 @@ so that any merges are reported and left to the developer to decide whether to a
 Refer to good article on this at ( http://longair.net/blog/2009/04/16/git-fetch-and-merge/ )
 "a git pull does both the fetch and merge without giving you a chance to review the merges & accept or decline them."
 
+9. Want to switch out of the branch you are currently working on to get the latest updates from another branch down to your local repo?
+In your current working branch do:
+git stash
+
+then you can do stuff on other branches
+
+then come back to your original branch and
+
+git stash pop
+
+Overall a little more overhead involved with git stash and git stash pop commands in order to simply switch branches without even wanting to make edits to the other branch.
+
+
