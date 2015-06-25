@@ -34,3 +34,7 @@ then class level styling listed next
 and identifier level styling listed last.
 Of course, the styling applied at run-time is in order of specificity.
 
+7. follow up 
+how to auto-close an issue
+We will use "Fixed #1" or whatever issue number in the commit comment to auto-close the issue in github.
+
