@@ -1,4 +1,12 @@
 
+.full-page {
+  width: 100%;
+  height: 500px;
+  background-image: url("https://mrandmrssmith-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/ABaC.png");
+  background-repeat: no-repeat;
+  background-color: yellow;
+}
+
 #main_menu a {
   text-decoration: none;
 }
