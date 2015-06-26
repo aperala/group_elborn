@@ -30,3 +30,9 @@
 #contact_form {
   width: 35%
 }
+
+
+/*Menu styles*/
+.menu_itemlist {
+  list-style-type: none;
+}
