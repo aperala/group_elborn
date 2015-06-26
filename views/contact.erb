@@ -1,15 +1,32 @@
 <h1> Contact Us </h1>
 
-<form method="POST", action="/contact">
-  First name:
-   <textarea name="firstname"></textarea>
-  Last name:
-   <textarea name="lastname"></textarea>
-  E-mail:
-   <input type="e-mail"></textarea>
-  Phone:
-   <textarea name="phone"></textarea>
-  Your comments:
-   <textarea name="your_comments"></textarea>
-   <input type="submit"> 
+<div id="map-canvas">
+  <iframe width="600" height="450" frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?q=El%20Born%20Bar%2C%20Passeig%20del%20Born%2C%20Barcelona%2C%20Spain&key=AIzaSyAIBwSOXlrbqv35UG7xTTUoCFZb3TSgMcA"></iframe>
+</div>
+
+<!-- <iframe width="600" height="450" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/place?q=El+Born+Bar,+Passeig+del+Born,+Barcelona,+Spain&key=ENV['GMEMB_KEY']"></iframe> -->
+
+<form method="POST", action="/contact" id="contact_form">
+
+  <div class="form_title">First name:</div>
+  <input class="form_field" type="text" name="firstname" required>
+  
+  <div class="form_title">Last name:</div>
+  <input class="form_field" type="text" name="lastname" required>
+  
+  <div class="form_title">E-mail:</div>
+  <input class="form_field" type="e-mail" required>
+  
+  <div class="form_title">Phone:</div>
+  (please include country code outside of Spain):
+  <input class="form_field" type="tel" name="phone" required>
+  
+  <div class="form_title">Your comments:</div>
+  <input class="form_field" name="your_comments">
+   
+   <div class="submit_container"
+    <input type="submit"> 
+  </div>
 </form>

@@ -41,4 +41,5 @@ We will use "Fixed #1" or whatever issue number in the commit comment to auto-cl
 testing again - "Fixes #1" did not auto-close the issue in github
 is the keyword "fixes" case-sensitive?
 
-
+8. Google Map API
+-In order for the Google Map to display, need to generate API key (use enviroment variable)

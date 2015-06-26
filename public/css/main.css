@@ -8,6 +8,7 @@
   background-color: yellow;
 }
 
+/*Text area on the About page*/
 .leftside {
   width: 200px;
   float: left;
@@ -16,4 +17,16 @@
 
 #main_menu a {
   text-decoration: none;
+}
+
+/*Contact Page map*/
+#map-canvas {
+  width: 400px;
+  height: 300px;
+  float: left;
+  background-color: #ccc;
+}
+
+#contact_form {
+  width: 35%
 }
