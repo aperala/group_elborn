@@ -1,1 +1,30 @@
-Reservations
+<form class="form_container action="/reservation_confirm" method="POST">
+  <div class="form_title"> 
+    <h2>Make Reservation</h2>
+  </div>
+
+  <div class="form_title">Date</div>
+  <input class="form_field" type="date" name="res_date" required><br>
+
+  <div class="form_title">Time</div>
+  <input class="form_field" type="time" name="res_time" required><br>
+
+  <div class="form_title">Number of people</div>
+  <input class="form_field" type="number" name="res_number" required><br>
+
+  <div class="form_title">First Name</div>
+  <input class="form_field" type="text" name="firstname" required>
+
+  <div class="form_title">Last Name</div>
+  <input class="form_field" type="text" name="lastname"><br>
+
+  <div class="form_title">Email</div>
+  <input class="form_field" type="text" name="email"><br>
+
+  <div class="form_title">Contact Number</div>
+  <input class="form_field" type="tel" name="res_contact" required><br>
+
+  <div class="submit_container">
+    <input class="submit_button" type="submit" value="Submit">
+  </div>
+</form>

@@ -1,4 +1,234 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
 
+/* base HTML elements styles */
+
+header {
+  background-color: #FFFFF0;
+  top: 0;
+  position: fixed;
+    z-index: 999999;
+    margin: 0 auto;
+    width: 900px;
+
+    /*
+    width:1000px;
+    z-index:2;
+    height:100px;
+    position: fixed; 
+    */
+}
+
+.page_content {
+  top: 100px;
+  left: 10px;
+  width: 95%;
+  /*margin-top: 100px;*/
+  padding: 10px;
+  margin: 90 auto;
+  background-color: #FFFFF0;
+  z-index: -1;
+}
+
+/* style menu buttons */
+.menu_button {
+  border-top: 1px solid #eeedf7;
+  background: #212433;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b0b0b0), to(#212433));
+  background: -webkit-linear-gradient(top, #b0b0b0, #212433);
+  background: -moz-linear-gradient(top, #b0b0b0, #212433);
+  background: -ms-linear-gradient(top, #b0b0b0, #212433);
+  background: -o-linear-gradient(top, #b0b0b0, #212433);
+  padding: 14.5px 50px;
+  -webkit-border-radius: 29px;
+  -moz-border-radius: 29px;
+  border-radius: 29px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: #333333;
+  font-size: 20px;
+  font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  vertical-align: middle;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.menu_button:hover {
+  border-top-color: #252d3b;
+  background: #252d3b;
+  color: #bfc4cf;
+}
+
+.menu_button:active {
+  border-top-color: #52627d;
+  background: #52627d;
+}
+
+.form_container {
+   border: 2px solid #1a1f1a;
+   background: #ededed;
+   background: -webkit-gradient(linear, left top, left bottom, from(#caccc2), to(#ededed));
+   background: -webkit-linear-gradient(top, #caccc2, #ededed);
+   background: -moz-linear-gradient(top, #caccc2, #ededed);
+   background: -ms-linear-gradient(top, #caccc2, #ededed);
+   background: -o-linear-gradient(top, #caccc2, #ededed);
+   background-image: -ms-linear-gradient(top, #caccc2 0%, #ededed 100%);
+   -webkit-border-radius: 21px;
+   -moz-border-radius: 21px;
+   border-radius: 21px;
+   -webkit-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
+   font-family: 'Raleway', 'Helvetica Neue',Helvetica,sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   min-width:300px;
+   padding:20px;
+   width:300px;
+}
+
+.form_field {
+   border: 1px solid #2e2820;
+   background: #e3d1bd;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   color: #736e61;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   padding:8px;
+   margin-bottom:20px;
+   width:280px;
+}
+
+.form_field:focus {
+   background: #cccbcf;
+   color: #c7bbad;
+}
+
+.form_container h2 {
+   text-shadow: #dedede 0 1px 0;
+   font-size:18px;
+   margin: 0 0 10px 0;
+   font-weight:bold;
+   text-align:center;
+}
+
+.form_title {
+   margin-bottom:10px;
+   color: #0f0c09;
+   text-shadow: #dedede 0 1px 0;
+}
+
+.submit_container {
+   margin:8px 0;
+   text-align:right;
+}
+
+.submit_button {
+   border: 1px solid #3a7196;
+   background: #2f8a56;
+   background: -webkit-gradient(linear, left top, left bottom, from(#11ab44), to(#2f8a56));
+   background: -webkit-linear-gradient(top, #11ab44, #2f8a56);
+   background: -moz-linear-gradient(top, #11ab44, #2f8a56);
+   background: -ms-linear-gradient(top, #11ab44, #2f8a56);
+   background: -o-linear-gradient(top, #11ab44, #2f8a56);
+   background-image: -ms-linear-gradient(top, #11ab44 0%, #2f8a56 100%);
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #babaab 0 1px 0;
+   color: #10120e;
+   font-family: helvetica, serif;
+   padding: 8.5px 18px;
+   font-size: 14px;
+   text-decoration: none;
+   vertical-align: middle;
+}
+
+.submit_button:hover {
+   border: 1px solid #447314;
+   text-shadow: #31540c 0 1px 0;
+   background: #6aa436;
+   background: -webkit-gradient(linear, left top, left bottom, from(#8dc059), to(#6aa436));
+   background: -webkit-linear-gradient(top, #8dc059, #6aa436);
+   background: -moz-linear-gradient(top, #8dc059, #6aa436);
+   background: -ms-linear-gradient(top, #8dc059, #6aa436);
+   background: -o-linear-gradient(top, #8dc059, #6aa436);
+   background-image: -ms-linear-gradient(top, #8dc059 0%, #6aa436 100%);
+   color: #fff;
+}
+
+.submit_button:active {
+   text-shadow: #31540c 0 1px 0;
+   border: 1px solid #447314;
+   background: #8dc059;
+   background: -webkit-gradient(linear, left top, left bottom, from(#6aa436), to(#6aa436));
+   background: -webkit-linear-gradient(top, #6aa436, #8dc059);
+   background: -moz-linear-gradient(top, #6aa436, #8dc059);
+   background: -ms-linear-gradient(top, #6aa436, #8dc059);
+   background: -o-linear-gradient(top, #6aa436, #8dc059);
+   background-image: -ms-linear-gradient(top, #6aa436 0%, #8dc059 100%);
+   color: #fff;
+}
+   
+
+#outer_container {
+  /*top: 90px; */
+  position: relative;
+  left: 10px;
+  width: 95%;
+  margin-top: 10px;
+  padding: 10px;
+  margin: 90 auto;
+  background-color: #FFFFF0;
+  z-index: 100;
+}
+
+/* Make the menu sticky to the top of page */
+#main_menu {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 95%;
+  border: none;
+  z-index:2;
+  height:100px;
+}
+
+/* Remove the underline from the anchors in the menu */
 #main_menu a {
   text-decoration: none;
 }
+
+/* Remove default padding from the menu list - i.e. the bullets */
+#main_menu ul {
+  height: auto;
+  padding: 10px 0px;
+  margin: 10px;
+}
+
+/* set the menu to display horizontally, with spacing between menu items */
+#main_menu li {
+  display: inline;
+  line-height: 20px;
+  padding: 10px 10px 20px 20px;
+  position: static;
+  opacity: 0.7;
+}
+
+/* sticky footer */
+#footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 999999;
+    margin: 0 auto;
+    width: 900px;
+}
+
