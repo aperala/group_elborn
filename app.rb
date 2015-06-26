@@ -26,6 +26,7 @@ end
 
 post '/contact' do
   @title = "Contact Confirmation"
+  @your_message = params["your_comments"]
   erb :contact_confirm
 end
 
