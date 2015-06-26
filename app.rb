@@ -44,7 +44,7 @@ get '/menu' do
   puts mandrill.messages.send(message)
 
   "I think we sent a message!"
-  #erb :menu
+  erb :menu
 end
 
 post '/contact' do

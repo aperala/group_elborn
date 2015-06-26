@@ -140,6 +140,19 @@ header {
    text-shadow: #dedede 0 1px 0;
 }
 
+/*Menu page food/drink divs*/
+.menu_block {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/*Menu page list styles*/
+.menu_itemlist {
+  list-style-type: none;
+}
+
 .submit_container {
    margin:8px 0;
    text-align:right;
@@ -237,11 +250,6 @@ header {
 }
 
 
-/*Menu styles*/
-.menu_itemlist {
-  list-style-type: none;
-}
-
 /* Remove default padding from the menu list - i.e. the bullets */
 #main_menu ul {
   height: auto;
@@ -267,3 +275,9 @@ header {
     width: 900px;
 }
 
+#menu_page {
+  width: 100%;
+  height: 60%;
+  background: url(http://www.trbimg.com/img-53a3362b/turbine/hm-el-pulpo-restaurant-tapas-bar-southington-20140619) no-repeat center;
+  background-size: cover;
+}
