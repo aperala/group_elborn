@@ -41,9 +41,9 @@ get '/menu' do
              from_email: 'pbunsee@gmail.com',
              text: "How does that sound" }
 
-  puts mandrill.messages.send(message)
+  # puts mandrill.messages.send(message)
 
-  "I think we sent a message!"
+  # "I think we sent a message!"
   erb :menu
 end
 

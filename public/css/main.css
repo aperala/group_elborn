@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Lato);
 
 .full-page {
   width: 100%;
@@ -143,8 +144,10 @@ header {
 /*Menu page food/drink divs*/
 .menu_block {
   width: 80%;
-  margin: 0 auto;
+  margin: 30px auto;
+  padding: .5em;
   text-align: center;
+  font-family: 'Lato', sans-serif;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -277,7 +280,10 @@ header {
 
 #menu_page {
   width: 100%;
-  height: 60%;
-  background: url(http://www.trbimg.com/img-53a3362b/turbine/hm-el-pulpo-restaurant-tapas-bar-southington-20140619) no-repeat center;
+  height: 100%;
+  background: url(http://www.trbimg.com/img-53a3362b/turbine/hm-el-pulpo-restaurant-tapas-bar-southington-20140619);
   background-size: cover;
+  background-position: right bottom, left top;
+  background-repeat: no-repeat;
+  background-color: black;
 }
