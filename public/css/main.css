@@ -2,19 +2,20 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
 .full-page {
-  width: 100%;
+  width: inherit;
   height: 500px;
-  background-image: url("https://mrandmrssmith-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/ABaC.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: yellow;
+  background: url("http://farm6.staticflickr.com/5225/5605922398_ff3c8cbedc_z.jpg") no-repeat fixed center;
+  /*background-image: url("https://mrandmrssmith-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/ABaC.png");*/
+  background-size: cover;
+  background-color: black;
 }
 
 /*Text area on the About page*/
 .leftside {
   width: 200px;
   float: left;
-  background-color: rgba(0, 0, 0, .2);
+  font-family: 'Lato', sans-serif;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 
@@ -286,4 +287,11 @@ header {
   background-position: right bottom, left top;
   background-repeat: no-repeat;
   background-color: black;
+}
+
+/*video embed styling for About page*/
+#vimeo {
+width: 60%;
+height: 421px; 
+float: right;
 }
