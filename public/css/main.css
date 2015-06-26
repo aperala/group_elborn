@@ -2,19 +2,20 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
 .full-page {
-  width: 100%;
+  width: inherit;
   height: 500px;
-  background-image: url("https://mrandmrssmith-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/ABaC.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: yellow;
+  background: url("http://farm6.staticflickr.com/5225/5605922398_ff3c8cbedc_z.jpg") no-repeat fixed center;
+  background-size: cover;
+  background-color: black;
 }
 
 /*Text area on the About page*/
 .leftside {
   width: 200px;
   float: left;
-  background-color: rgba(0, 0, 0, .2);
+  margin-left: 10px;
+  font-family: 'Lato', sans-serif;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 
@@ -141,6 +142,21 @@ header {
    text-shadow: #dedede 0 1px 0;
 }
 
+/*Menu page food/drink divs*/
+.menu_block {
+  width: 80%;
+  margin: 30px auto;
+  padding: .5em;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/*Menu page list styles*/
+.menu_itemlist {
+  list-style-type: none;
+}
+
 .submit_container {
    margin:8px 0;
    text-align:right;
@@ -228,21 +244,26 @@ header {
 }
 
 /*Contact Page map*/
-#map-canvas {
-  width: 400px;
-  height: 300px;
-  float: left;
+#map_canvas {
+  width: 600px;
+  height: 450px;
+  float: right;
   background-color: #ccc;
 }
 
-#contact_form {
-  width: 35%
+#born_contact {
+  width: 200px;
+  position: relative;
+  top: 450px;
+  left: 540px;
 }
 
+#contact_form {
+  width: 35%;
+}
 
-/*Menu styles*/
-.menu_itemlist {
-  list-style-type: none;
+#comment_form {
+  height: 100px;
 }
 
 /* Remove default padding from the menu list - i.e. the bullets */
@@ -270,3 +291,19 @@ header {
     width: 900px;
 }
 
+#menu_page {
+  width: 100%;
+  height: 100%;
+  background: url(http://www.trbimg.com/img-53a3362b/turbine/hm-el-pulpo-restaurant-tapas-bar-southington-20140619);
+  background-size: cover;
+  background-position: right bottom, left top;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+/*video embed styling for About page*/
+#vimeo {
+width: 60%;
+height: 421px; 
+float: right;
+}
