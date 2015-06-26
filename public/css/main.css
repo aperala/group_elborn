@@ -5,7 +5,6 @@
   width: inherit;
   height: 500px;
   background: url("http://farm6.staticflickr.com/5225/5605922398_ff3c8cbedc_z.jpg") no-repeat fixed center;
-  /*background-image: url("https://mrandmrssmith-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/ABaC.png");*/
   background-size: cover;
   background-color: black;
 }
@@ -14,6 +13,7 @@
 .leftside {
   width: 200px;
   float: left;
+  margin-left: 10px;
   font-family: 'Lato', sans-serif;
   background-color: rgba(255, 255, 255, 0.7);
 }
@@ -257,7 +257,11 @@ header {
 }
 
 #contact_form {
-  width: 35%
+  width: 35%;
+}
+
+#comment_form {
+  height: 100px;
 }
 
 /* Remove default padding from the menu list - i.e. the bullets */
