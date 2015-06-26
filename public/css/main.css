@@ -242,17 +242,23 @@ header {
 }
 
 /*Contact Page map*/
-#map-canvas {
-  width: 400px;
-  height: 300px;
-  float: left;
+#map_canvas {
+  width: 600px;
+  height: 450px;
+  float: right;
   background-color: #ccc;
+}
+
+#born_contact {
+  width: 200px;
+  position: relative;
+  top: 450px;
+  left: 540px;
 }
 
 #contact_form {
   width: 35%
 }
-
 
 /* Remove default padding from the menu list - i.e. the bullets */
 #main_menu ul {
