@@ -53,7 +53,7 @@ post '/contact' do
   erb :contact_confirm
 end
 
-post '/reservations' do
+post '/reservation_confirm' do
   @res_date = params["res_date"]
   @res_time = params["res_time"]
   @res_number = params["res_number"]

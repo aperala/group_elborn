@@ -1,37 +1,48 @@
-<h1> Contact Us </h1>
 
-<div id="map_canvas">
-  <iframe width="600" height="450" frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/place?q=El%20Born%20Bar%2C%20Passeig%20del%20Born%2C%20Barcelona%2C%20Spain&key=AIzaSyAIBwSOXlrbqv35UG7xTTUoCFZb3TSgMcA"></iframe>
-</div>
+  <div id="contact_rhs">
 
-<div id="born_contact">
-  Passeig del Born, 26
-  Barcelona 08003
-  Tel 933-195-333
-  barelborn@gmail.com
-  Hours: 10:00 AM - 3:00 AM
-</div>
+    <div id="map_canvas">
+      <iframe width="600" height="450" frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?q=El%20Born%20Bar%2C%20Passeig%20del%20Born%2C%20Barcelona%2C%20Spain&key=AIzaSyAIBwSOXlrbqv35UG7xTTUoCFZb3TSgMcA"></iframe>
+    </div>
 
-<form method="POST", action="/contact" id="contact_form">
-
-  <div class="form_title">First name:</div>
-  <input class="form_field" type="text" name="firstname" required>
-  
-  <div class="form_title">Last name:</div>
-  <input class="form_field" type="text" name="lastname" required>
-  
-  <div class="form_title">E-mail:</div>
-  <input class="form_field" type="e-mail" required>
-  
-  <div class="form_title">Phone:</div>
-  (please include country code outside of Spain):
-  <input class="form_field" type="tel" name="phone" required>
-  
-  <div class="form_title">Your comments:</div>
-  <input class="form_field" name="your_comments" id="comment_form">
-   
-  <div class="submit_container">
-  <input type="submit"> 
+    <div id="born_contact">
+      Passeig del Born, 26
+      Barcelona 08003
+      Tel 933-195-333
+      barelborn@gmail.com
+      Hours: 10:00 AM - 3:00 AM
+    </div>
   </div>
+
+  <div id="contact_lhs">
+
+    <form class="form_container" method="POST" action="/contact" id="contact_form">
+
+      <div class="form_title"> 
+        <h2>Contact Us</h2>
+      </div>
+
+      <div class="form_title">First name:</div>
+      <input class="form_field" type="text" name="firstname" required>
+  
+      <div class="form_title">Last name:</div>
+      <input class="form_field" type="text" name="lastname" required>
+  
+      <div class="form_title">E-mail:</div>
+      <input class="form_field" type="e-mail" required>
+  
+      <div class="form_title">Phone:</div>
+      (please include country code outside of Spain):
+      <input class="form_field" type="tel" name="phone" required>
+  
+      <div class="form_title">Your comments:</div>
+      <input class="form_field" name="your_comments" id="comment_form">
+   
+      <div class="submit_container">
+        <input class="submit_button" type="submit" value="Submit"> 
+      </div>
+
+  </div>
+
 </form>

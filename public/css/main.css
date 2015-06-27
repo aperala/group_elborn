@@ -1,91 +1,150 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway);
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
+/* base HTML elements styles */
+header {
+  /*background-color: #FFFFF0;*/
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  margin: 0 auto;
+  width: 900px;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  margin-left: 10px;
+  width: 95%;
+  height: 100%;
+  border: 1px solid #000000;
+  z-index: 10;
+  /* background-image: set it in the javascript code */
+}
+
+/* hide / show food and drink menu tabs */
+.content_active {
+  display: block;
+}
+
+.tab_link_active {
+  /* have to add styling here to control the restaurant menu page */
+}
+
+/* ABOUT PAGE STYLES -- START */
+/* taken out to test out About page layout
 .full-page {
   width: inherit;
   height: 500px;
-  background: url("http://farm6.staticflickr.com/5225/5605922398_ff3c8cbedc_z.jpg") no-repeat fixed center;
+  background: url("http://farm6.staticflickr.com/5225/5605922398_ff3c8cbedc_z.jpg") no-repeat fixed center; 
   background-size: cover;
   background-color: black;
 }
+*/
 
 /*Text area on the About page*/
 .leftside {
+  position: fixed;
+  top: 20%;
   width: 200px;
   float: left;
   margin-left: 10px;
   font-family: 'Lato', sans-serif;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
+  /*border-style: solid; added border to troubleshoot layout on about page*/
 }
 
-
-/* base HTML elements styles */
-
-header {
-  background-color: #FFFFF0;
-  top: 0;
-  position: fixed;
-    z-index: 1;
-    margin: 0 auto;
-    width: 900px;
-
-    /*
-    width:1000px;
-    z-index:2;
-    height:100px;
-    position: fixed; 
-    */
+#bar_video {
+  position: absolute;
+  float: right;
+  top: 100px;
+  left: 300px;
+  width: 700px;
+  height: 500px; 
+  margin-left: 10px;
+  /*border-style: dashed; added border to troubleshoot layout on about page*/
 }
+
+/* video embed styling for About page */
+#vimeo {
+  width: 100%;
+  height: 421px; 
+  /*float: right;*/
+}
+/* ABOUT PAGE STYLES -- END */
+
+/* CONTACT PAGE STYLES -- START */
+#contact_lhs {
+  position: absolute;
+  float: left;
+  top: 50px;
+  /*border: solid; added to troubleshoot layout on contact page */
+}
+
+#contact_rhs {
+  position: absolute;
+  float: right;
+  top: 50px;
+  left: 600px;
+  /*border: dashed; added to troubleshoot layout on contact page */
+}
+
+/* Contact Page map */
+#map_canvas {
+  width: 600px;
+  height: 450px;
+  /*float: right;*/
+  background-color: #ccc;
+}
+
+#born_contact {
+  width: 200px;
+  position: relative;
+  padding-top: 10px;
+  font-family: 'Lato', serif;
+  /*top: 450px;
+  left: 540px;*/
+}
+
+#comment_form {
+  height: 100px;
+}
+
+/* CONTACT PAGE STYLES -- END */
 
 .page_content {
-  top: 100px;
+  top: 10;
   left: 10px;
   width: 95%;
   /*margin-top: 100px;*/
-  padding: 10px;
-  margin: 90 auto;
-  background-color: #FFFFF0;
+  padding: 5px;
+  padding-top: 10px;
+  margin: 0 auto;
+  /*background-color: #FFFFF0;*/
   z-index: -1;
 }
 
 /* style menu buttons */
 .menu_button {
-  border-top: 1px solid #eeedf7;
-  background: #212433;
-  background: -webkit-gradient(linear, left top, left bottom, from(#b0b0b0), to(#212433));
-  background: -webkit-linear-gradient(top, #b0b0b0, #212433);
-  background: -moz-linear-gradient(top, #b0b0b0, #212433);
-  background: -ms-linear-gradient(top, #b0b0b0, #212433);
-  background: -o-linear-gradient(top, #b0b0b0, #212433);
-  padding: 14.5px 50px;
-  -webkit-border-radius: 29px;
-  -moz-border-radius: 29px;
-  border-radius: 29px;
-  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-  box-shadow: rgba(0,0,0,1) 0 1px 0;
-  text-shadow: rgba(0,0,0,.4) 0 1px 0;
-  color: #333333;
   font-size: 20px;
-  font-family: 'Lato', Helvetica, Arial, Sans-Serif;
+  color: rgb(0,0,0);
+  font-family: Georgia, serif;
   text-decoration: none;
   vertical-align: middle;
-  margin: 0 auto;
-  display: inline-block;
 }
 
 .menu_button:hover {
-  border-top-color: #252d3b;
-  background: #252d3b;
-  color: #bfc4cf;
+  background: rgba(0,0,0,0.4); 
+  color:rgba(0,0,0,0.8);
 }
 
 .menu_button:active {
-  border-top-color: #52627d;
-  background: #52627d;
+  border-top-color: rgba(0,0,0);
+  background: rgba(0,0,0);
 }
 
+/* styling for contact page form */
 .form_container {
+   top: 50px;
    border: 2px solid #1a1f1a;
    background: #ededed;
    background: -webkit-gradient(linear, left top, left bottom, from(#caccc2), to(#ededed));
@@ -105,7 +164,7 @@ header {
    vertical-align: middle;
    min-width:300px;
    padding:20px;
-   width:300px;
+   width:350px;
 }
 
 .form_field {
@@ -114,18 +173,63 @@ header {
    -webkit-border-radius: 5px;
    -moz-border-radius: 5px;
    border-radius: 5px;
-   color: #736e61;
+   color: rgb(0,0,0); /*#736e61;*/
    -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
    -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
    box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
-   padding:8px;
-   margin-bottom:20px;
-   width:280px;
+   padding: 8px;
+   margin-bottom: 20px;
+   width: 350px;
+   font-size: 15px;
+}
+
+/* styling for reservations page form */
+.form_container_res {
+   position: relative;
+   top: 50px;
+   left: 25%;
+   border: 2px solid #1a1f1a;
+   background: #ededed;
+   background: -webkit-gradient(linear, left top, left bottom, from(#caccc2), to(#ededed));
+   background: -webkit-linear-gradient(top, #caccc2, #ededed);
+   background: -moz-linear-gradient(top, #caccc2, #ededed);
+   background: -ms-linear-gradient(top, #caccc2, #ededed);
+   background: -o-linear-gradient(top, #caccc2, #ededed);
+   background-image: -ms-linear-gradient(top, #caccc2 0%, #ededed 100%);
+   -webkit-border-radius: 21px;
+   -moz-border-radius: 21px;
+   border-radius: 21px;
+   -webkit-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
+   font-family: 'Lato', 'Helvetica Neue',Helvetica,sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   min-width: 300px;
+   padding: 20px;
+   width: 600px;
+   height: 400px;
+}
+
+.form_field_res {
+   border: 1px solid #2e2820;
+   background: #e3d1bd;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   color: rgb(0,0,0); /*#736e61;*/
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   padding: 8px;
+   margin-bottom: 20px;
+   width: 280px;
+   font-size: 15px;
 }
 
 .form_field:focus {
    background: #cccbcf;
-   color: #c7bbad;
+   color: rgb(0,0,0); /*#c7bbad;*/
 }
 
 .form_container h2 {
@@ -142,7 +246,7 @@ header {
    text-shadow: #dedede 0 1px 0;
 }
 
-/*Menu page food/drink divs*/
+/* Menu page food/drink divs */
 .menu_block {
   width: 80%;
   margin: 30px auto;
@@ -152,7 +256,7 @@ header {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-/*Menu page list styles*/
+/* Menu page list styles */
 .menu_itemlist {
   list-style-type: none;
 }
@@ -212,65 +316,54 @@ header {
    color: #fff;
 }
    
-
 #outer_container {
-  /*top: 90px; */
   position: relative;
-  left: 10px;
-  width: 95%;
-  margin-top: 10px;
-  padding: 10px;
-  margin: 90 auto;
-  background-color: #FFFFF0;
-  z-index: 100;
+  left: 5px;
+  width: 100%;
+  margin-top: 0;
+  padding: 5px;
+  margin: 0 auto;
+  z-index: 10;  /* had to set z-index of the page content outer container same as the canvas z-index */
+}
+
+
+
+#form_lhs {
+  float: left;
+}
+
+#form_rhs {
+  float: right;
 }
 
 /* Make the menu sticky to the top of page */
 #main_menu {
   position: fixed;
-  top: 10px;
-  left: 10px;
-  width: 95%;
+  top: 0;
+  left: 5px;
+  width: 90%;
   border: none;
   z-index:2;
-  height:100px;
-  /*background-color: #CCE6FF;*/
-  background: url("css/elborn_logo.png");
+  height:40px;
+  text-align: center;
+  padding-bottom: 10px;
+  /* background: url("../media/elborn_logo.png");
+  background-size: 90% 40px;
+  background-repeat: no-repeat; */
 }
 
 /* Remove the underline from the anchors in the menu */
 #main_menu a {
   text-decoration: none;
-}
-
-/*Contact Page map*/
-#map_canvas {
-  width: 600px;
-  height: 450px;
-  float: right;
-  background-color: #ccc;
-}
-
-#born_contact {
-  width: 200px;
-  position: relative;
-  top: 450px;
-  left: 540px;
-}
-
-#contact_form {
-  width: 35%;
-}
-
-#comment_form {
-  height: 100px;
+  display: inline-block;
+  padding: 0 12px;
 }
 
 /* Remove default padding from the menu list - i.e. the bullets */
 #main_menu ul {
   height: auto;
-  padding: 10px 0px;
-  margin: 10px;
+  /* padding: 10px 0px; */
+  margin: 5px;
 }
 
 /* set the menu to display horizontally, with spacing between menu items */
@@ -279,16 +372,17 @@ header {
   line-height: 20px;
   padding: 10px 10px 20px 20px;
   position: static;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 /* sticky footer */
 #footer {
-    position: fixed;
-    bottom: 0;
-    z-index: 999999;
-    margin: 0 auto;
-    width: 900px;
+  position: absolute;
+  bottom: -10;
+  z-index: 1;
+  margin: 0 auto;
+  width: 90%;
+  background-color: rgba(0,0,0, 0.5);
 }
 
 #menu_page {
@@ -301,9 +395,4 @@ header {
   background-color: black;
 }
 
-/*video embed styling for About page*/
-#vimeo {
-width: 60%;
-height: 421px; 
-float: right;
-}
+
