@@ -1,6 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
 /* base HTML elements styles */
+body {
+  font-family: 'Lato', serif;
+}
+
 header {
   /*background-color: #FFFFF0;*/
   top: 0;
@@ -21,25 +25,7 @@ canvas {
   /* background-image: set it in the javascript code */
 }
 
-/* hide / show food and drink menu tabs */
-.content_active {
-  display: block;
-}
-
-.tab_link_active {
-  /* have to add styling here to control the restaurant menu page */
-}
-
 /* ABOUT PAGE STYLES -- START */
-/* taken out to test out About page layout
-.full-page {
-  width: inherit;
-  height: 500px;
-  background: url("http://farm6.staticflickr.com/5225/5605922398_ff3c8cbedc_z.jpg") no-repeat fixed center; 
-  background-size: cover;
-  background-color: black;
-}
-*/
 
 /*Text area on the About page*/
 .leftside {
@@ -109,40 +95,6 @@ canvas {
   height: 100px;
 }
 
-/* CONTACT PAGE STYLES -- END */
-
-.page_content {
-  top: 10;
-  left: 10px;
-  width: 95%;
-  /*margin-top: 100px;*/
-  padding: 5px;
-  padding-top: 10px;
-  margin: 0 auto;
-  /*background-color: #FFFFF0;*/
-  z-index: -1;
-}
-
-/* style menu buttons */
-.menu_button {
-  font-size: 20px;
-  color: rgb(0,0,0);
-  font-family: Georgia, serif;
-  text-decoration: none;
-  vertical-align: middle;
-}
-
-.menu_button:hover {
-  background: rgba(0,0,0,0.4); 
-  color:rgba(0,0,0,0.8);
-}
-
-.menu_button:active {
-  border-top-color: rgba(0,0,0);
-  background: rgba(0,0,0);
-}
-
-/* styling for contact page form */
 .form_container {
    top: 50px;
    border: 2px solid #1a1f1a;
@@ -164,101 +116,7 @@ canvas {
    vertical-align: middle;
    min-width:300px;
    padding:20px;
-   width:350px;
-}
-
-.form_field {
-   border: 1px solid #2e2820;
-   background: #e3d1bd;
-   -webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-   border-radius: 5px;
-   color: rgb(0,0,0); /*#736e61;*/
-   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
-   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
-   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
-   padding: 8px;
-   margin-bottom: 20px;
-   width: 350px;
-   font-size: 15px;
-}
-
-/* styling for reservations page form */
-.form_container_res {
-   position: relative;
-   top: 50px;
-   left: 25%;
-   border: 2px solid #1a1f1a;
-   background: #ededed;
-   background: -webkit-gradient(linear, left top, left bottom, from(#caccc2), to(#ededed));
-   background: -webkit-linear-gradient(top, #caccc2, #ededed);
-   background: -moz-linear-gradient(top, #caccc2, #ededed);
-   background: -ms-linear-gradient(top, #caccc2, #ededed);
-   background: -o-linear-gradient(top, #caccc2, #ededed);
-   background-image: -ms-linear-gradient(top, #caccc2 0%, #ededed 100%);
-   -webkit-border-radius: 21px;
-   -moz-border-radius: 21px;
-   border-radius: 21px;
-   -webkit-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
-   -moz-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
-   box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
-   font-family: 'Lato', 'Helvetica Neue',Helvetica,sans-serif;
-   text-decoration: none;
-   vertical-align: middle;
-   min-width: 300px;
-   padding: 20px;
-   width: 600px;
-   height: 400px;
-}
-
-.form_field_res {
-   border: 1px solid #2e2820;
-   background: #e3d1bd;
-   -webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-   border-radius: 5px;
-   color: rgb(0,0,0); /*#736e61;*/
-   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
-   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
-   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
-   padding: 8px;
-   margin-bottom: 20px;
-   width: 280px;
-   font-size: 15px;
-}
-
-.form_field:focus {
-   background: #cccbcf;
-   color: rgb(0,0,0); /*#c7bbad;*/
-}
-
-.form_container h2 {
-   text-shadow: #dedede 0 1px 0;
-   font-size:18px;
-   margin: 0 0 10px 0;
-   font-weight:bold;
-   text-align:center;
-}
-
-.form_title {
-   margin-bottom:10px;
-   color: #0f0c09;
-   text-shadow: #dedede 0 1px 0;
-}
-
-/* Menu page food/drink divs */
-.menu_block {
-  width: 80%;
-  margin: 30px auto;
-  padding: .5em;
-  text-align: center;
-  font-family: 'Lato', sans-serif;
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-/* Menu page list styles */
-.menu_itemlist {
-  list-style-type: none;
+   width:360px;
 }
 
 .submit_container {
@@ -315,6 +173,159 @@ canvas {
    background-image: -ms-linear-gradient(top, #6aa436 0%, #8dc059 100%);
    color: #fff;
 }
+/* CONTACT PAGE STYLES -- END */
+
+.page_content {
+  top: 10;
+  left: 10px;
+  width: 95%;
+  /*margin-top: 100px;*/
+  padding: 5px;
+  padding-top: 10px;
+  margin: 0 auto;
+  /*background-color: #FFFFF0;*/
+  z-index: -1;
+}
+
+/* style menu buttons */
+.menu_button {
+  font-size: 30px;
+  color: black; /*rgb(0,0,0);*/
+  text-shadow: 1px 4px 8px #000000;
+  font-family: 'Lato', serif;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.menu_button:hover {
+  /*background: rgba(0,0,0,0.4); 
+  color:rgba(0,0,0,0.8); */
+  color: rgb(255,255,255);
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.menu_button:active {
+  border-top-color: rgba(0,0,0);
+  background: rgba(0,0,0);
+  color: rgb(21,21,21);
+}
+
+a:visited {
+  color: rgb(21,21,21);
+}
+
+/* RESERVATION PAGE STYLES -- START */
+.form_container_res {
+   position: relative;
+   top: 50px;
+   left: 20%;
+   border: 2px solid #1a1f1a;
+   background: #ededed;
+   background: -webkit-gradient(linear, left top, left bottom, from(#caccc2), to(#ededed));
+   background: -webkit-linear-gradient(top, #caccc2, #ededed);
+   background: -moz-linear-gradient(top, #caccc2, #ededed);
+   background: -ms-linear-gradient(top, #caccc2, #ededed);
+   background: -o-linear-gradient(top, #caccc2, #ededed);
+   background-image: -ms-linear-gradient(top, #caccc2 0%, #ededed 100%);
+   -webkit-border-radius: 21px;
+   -moz-border-radius: 21px;
+   border-radius: 21px;
+   -webkit-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
+   font-family: 'Lato', 'Helvetica Neue',Helvetica,sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   min-width: 300px;
+   padding: 20px;
+   width: 700px;
+   height: 400px;
+}
+
+.form_field_res {
+   border: 1px solid #2e2820;
+   background: #e3d1bd;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   color: rgb(0,0,0); /*#736e61;*/
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   padding: 8px;
+   margin-bottom: 20px;
+   width: 280px;
+   font-size: 15px;
+}
+
+.submit_container_res {
+   margin:8px 0;
+   text-align:right;
+   clear: both;
+}
+
+#form_lhs {
+  position: relative;
+  float: left;
+}
+
+#form_rhs {
+  position: relative;
+  float: right;
+}
+
+#confirmed_reservation {
+  display: block;
+  position: absolute;
+  /*top: 100px;*/
+  padding-top: 40px;
+  margin-top: 40px;
+  width: 80%;
+  height: 70%;
+  margin: 30px auto;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+/* RESERVATION PAGE STYLES -- END */
+
+
+/* ALL FORMS STYLES -- START */
+.form_field {
+   border: 1px solid #2e2820;
+   background: #e3d1bd;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   color: rgb(0,0,0); /*#736e61;*/
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   padding: 8px;
+   margin-bottom: 20px;
+   width: 350px;
+   font-size: 15px;
+}
+
+.form_field:focus {
+   background: #cccbcf;
+   color: rgb(0,0,0); /*#c7bbad;*/
+}
+
+.form_container h2 {
+   text-shadow: #dedede 0 1px 0;
+   font-size:18px;
+   margin: 0 0 10px 0;
+   font-weight:bold;
+   text-align:center;
+}
+
+.form_title {
+   margin-bottom:10px;
+   color: #0f0c09;
+   text-shadow: #dedede 0 1px 0;
+}
+/* ALL FORMS STYLES -- END */
    
 #outer_container {
   position: relative;
@@ -326,16 +337,6 @@ canvas {
   z-index: 10;  /* had to set z-index of the page content outer container same as the canvas z-index */
 }
 
-
-
-#form_lhs {
-  float: left;
-}
-
-#form_rhs {
-  float: right;
-}
-
 /* Make the menu sticky to the top of page */
 #main_menu {
   position: fixed;
@@ -343,13 +344,11 @@ canvas {
   left: 5px;
   width: 90%;
   border: none;
-  z-index:2;
-  height:40px;
+  z-index: 2;
+  height: 40px;
   text-align: center;
   padding-bottom: 10px;
-  /* background: url("../media/elborn_logo.png");
-  background-size: 90% 40px;
-  background-repeat: no-repeat; */
+  color: rgb(0,0,0); 
 }
 
 /* Remove the underline from the anchors in the menu */
@@ -362,7 +361,6 @@ canvas {
 /* Remove default padding from the menu list - i.e. the bullets */
 #main_menu ul {
   height: auto;
-  /* padding: 10px 0px; */
   margin: 5px;
 }
 
@@ -388,11 +386,122 @@ canvas {
 #menu_page {
   width: 100%;
   height: 100%;
-  background: url(http://www.trbimg.com/img-53a3362b/turbine/hm-el-pulpo-restaurant-tapas-bar-southington-20140619);
+  /*background: url(http://www.trbimg.com/img-53a3362b/turbine/hm-el-pulpo-restaurant-tapas-bar-southington-20140619);
   background-size: cover;
   background-position: right bottom, left top;
   background-repeat: no-repeat;
-  background-color: black;
+  background-color: black;*/
 }
 
+/* TABBED LAYOUT ON MENU PAGE -- START */
+
+.tab_link {
+  /*border-top: 1px solid #030608;*/
+  background: #bac7cf;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d6d8d9), to(#bac7cf));
+  background: -webkit-linear-gradient(top, #d6d8d9, #bac7cf);
+  background: -moz-linear-gradient(top, #d6d8d9, #bac7cf);
+  background: -ms-linear-gradient(top, #d6d8d9, #bac7cf);
+  background: -o-linear-gradient(top, #d6d8d9, #bac7cf);
+  padding: 13px 26px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 2px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 2px 0;
+  box-shadow: rgba(0,0,0,1) 0 2px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: rgb(0,0,0); 
+  font-size: 24px;
+  font-family: 'Lato', serif;
+  text-decoration: none;
+  vertical-align: middle;
+ }
+
+.tab_link:hover {
+  border-top-color: #4b5359;
+  background: #4b5359;
+  color: #ccc; 
+  text-shadow: 1px 4px 8px #000000;
+}
+
+.tab_link:active {
+  border-top-color: #091117;
+  background: #091117;
+
+   border-top-color: #0b0c0d;
+   background: #0b0c0d;
+}
+
+/* Remove the underline from the anchors in the menu */
+.tabbed_menu a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 12px;
+  text-shadow: 1px 4px 8px #000000;
+}
+
+.tabbed_menu a:visited {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 12px;
+  text-shadow: 1px 4px 8px #000000;
+}
+
+/* Remove default padding from the menu list - i.e. the bullets */
+.tabbed_menu ul {
+  height: auto;
+  /* padding: 10px 0px; */
+  margin: 5px;
+}
+
+/* set the menu to display horizontally, with spacing between menu items */
+.tabbed_menu li {
+  display: inline;
+  line-height: 30px;
+  padding: 10px 10px 20px 20px;
+  position: static;
+  opacity: 0.9;
+}
+
+/* Make the menu sticky to the top of page */
+.tabbed_menu  {
+  position: fixed;
+  top: 40;
+  left: 5px;
+  width: 90%;
+  border: none;
+  z-index: 2;
+  height: 40px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#food {
+  display: block;
+}
+
+#drink {
+  display: none;
+}
+
+/* Menu page food/drink divs */
+.menu_block {
+  padding-top: 40px;
+  margin-top: 40px;
+  width: 80%;
+  height: 70%;
+  margin: 30px auto;
+  /*padding: .5em;*/
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Menu page list styles */
+.menu_itemlist {
+  list-style-type: none;
+}
+
+/* TABBED LAYOUT ON MENU PAGE -- END */
 

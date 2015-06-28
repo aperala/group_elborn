@@ -18,32 +18,10 @@ end
 get '/contact' do
   @title = "Contact"
   erb :contact
-  #m = Mandrill::API.new ENV['MANDRILL_APIKEY']
-  # m = Mandrill::API.new
-  # message = {  :subject=> "Hello from the Mandrill API",  
-  #              :from_name=> "Squirrel",  
-  #              :text=>"Hi message, how are you?",  
-  #              :to=>[{:email=> "pbunsee@gmail.com", :name=> "Recipient1"}],  
-  #              :html=>"<html><h1>Hi <strong>message</strong>, how are you?</h1></html>",  
-  #              :from_email=>"pbunsee@gmail.com" } 
-  #              sending = m.messages.send message 
-  #              puts sending
-  # "I think we sent a message!"
 end
 
 get '/menu' do
   @title = "Menu"
-  mandrill = Mandrill::API.new ENV['MANDRILL_APIKEY']
-  message = {to: [{"type"  =>"to",
-                   "email" =>"pbunsee@gmail.com",
-                   "name"  =>"Pranesha"}],
-             subject: "Let's meet for lunch!",
-             from_email: 'pbunsee@gmail.com',
-             text: "How does that sound" }
-
-  # puts mandrill.messages.send(message)
-
-  # "I think we sent a message!"
   erb :menu
 end
 
@@ -91,13 +69,11 @@ post '/reservation_confirm' do
   @res_confirm_msg = "#{@res_confirm_msg} </tr>"
   @res_confirm_msg = "#{@res_confirm_msg} </table>"
 
+  @res_confirm_page = "<div id=#{34.chr}confirmed_reservation#{34.chr}>#{@res_confirm_msg}</div>"
+
   img_email = "<img src='https://mrandmrssmith-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/ABaC.png'>"
   @res_confirm_msg = "#{@res_confirm_msg} <p>#{img_email}</p>"
 
-  #<img src="http://photosite.com/image.jpg" alt="My image" />
-  #https://mrandmrssmith-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/ABaC.png
-
-                   #"name"  =>"#{@firstname}" }],
 
   mandrill = Mandrill::API.new ENV['MANDRILL_APIKEY']
   message = {to: [{"type"  =>"to",
