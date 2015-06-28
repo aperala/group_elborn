@@ -6,14 +6,14 @@
 </div>
 
 <div id="born_contact">
-  Passeig del Born, 26
-  Barcelona 08003
-  Tel 933-195-333
-  barelborn@gmail.com
+  Passeig del Born, 26<br>
+  Barcelona 08003<br>
+  Tel 933-195-333<br>
+  barelborn@gmail.com<br>
   Hours: 10:00 AM - 3:00 AM
 </div>
 
-<form method="POST", action="/contact" id="contact_form">
+<form name="validate" method="POST", action="/contact" id="contact_form">
 
   <div class="form_title">First name:</div>
   <input class="form_field" type="text" name="firstname" required>
@@ -22,11 +22,11 @@
   <input class="form_field" type="text" name="lastname" required>
   
   <div class="form_title">E-mail:</div>
-  <input class="form_field" type="e-mail" required>
+  <input class="form_field" type="email" required>
   
   <div class="form_title">Phone:</div>
   (please include country code outside of Spain):
-  <input class="form_field" type="tel" name="phone" required>
+  <input class="form_field" type="tel" name="telnum" pattern="/^\(?\d(3)\)?-?\s*\d(3)\s*-?\d(4)$/" required>
   
   <div class="form_title">Your comments:</div>
   <input class="form_field" name="your_comments" id="comment_form">

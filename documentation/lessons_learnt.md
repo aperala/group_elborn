@@ -71,4 +71,4 @@ git stash pop
 
 Overall a little more overhead involved with git stash and git stash pop commands in order to simply switch branches without even wanting to make edits to the other branch.
 
-
+11. There is an HTML5 input pattern Attribute that can be used to match an input element value against a given regex. http://www.w3schools.com/tags/att_input_pattern.asp

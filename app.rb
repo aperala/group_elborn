@@ -59,8 +59,8 @@ post '/contact' do
 
   mandrill = Mandrill::API.new ENV['MANDRILL_APIKEY']
   message = {to: [{"type" => "to",
-                 "email" => "anitaperala@gmail.com",
-                 "name"  => "Anita"}],
+                 "email"  => "anitaperala@gmail.com",
+                 "name"   => "Anita"}],
                  subject: "Thank you for your comments on El Born Bar",
                  from_email: 'anitaperala@gmail.com',
                  html: "#{@contact_confirm_msg}"
