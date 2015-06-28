@@ -1,30 +1,37 @@
-<form class="form_container action="/reservation_confirm" method="POST">
+<form class="form_container_res" action="/reservation_confirm" method="POST">
   <div class="form_title"> 
     <h2>Make Reservation</h2>
   </div>
 
+  <div id="form_lhs">
   <div class="form_title">Date</div>
-  <input class="form_field" type="date" name="res_date" required><br>
+  <!--<label for="res_date">Date</label>-->
+  <input class="form_field_res" type="date" name="res_date" required><br>
 
   <div class="form_title">Time</div>
-  <input class="form_field" type="time" name="res_time" required><br>
+  <!--<label for="res_time">Time</label>-->
+  <input class="form_field_res" type="time" name="res_time" required><br>
 
-  <div class="form_title">Number of people</div>
-  <input class="form_field" type="number" name="res_number" required><br>
+  <div class="form_title">Number of guests</div>
+  <!--<label for="res_number">Number of guests</label>-->
+  <input class="form_field_res" type="number" name="res_number" required><br>
+  </div>
 
+  <div id="form_rhs">
   <div class="form_title">First Name</div>
-  <input class="form_field" type="text" name="firstname" required>
+  <!--<label for="firstname">First Name</label>-->
+  <input class="form_field_res" type="text" name="firstname" required>
 
   <div class="form_title">Last Name</div>
-  <input class="form_field" type="text" name="lastname"><br>
-
-  <div class="form_title">Email</div>
-  <input class="form_field" type="email" name="email"><br>
+  <!--<label for="lastname">Last Name</label>-->
+  <input class="form_field_res" type="text" name="lastname"><br>
 
   <div class="form_title">Contact Number</div>
-  <input class="form_field" type="tel" name="res_contact" required><br>
+  <!--<label for="res_contact">Contact Number</label>-->
+  <input class="form_field_res" type="tel" name="res_contact" required><br>
+  </div>
 
-  <div class="submit_container">
+  <div class="submit_container_res">
     <input class="submit_button" type="submit" value="Submit">
   </div>
 </form>
