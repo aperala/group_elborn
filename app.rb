@@ -40,7 +40,7 @@ post '/reservation_confirm' do
   @email = params["email"]
   @res_contact = params["res_contact"]
 
-  @res_confirm_msg = "<p>Your reservation at El Born is confirmed for <b>#{@res_time}</b> on <b>#{@res_date}</b>.</p>"
+  @res_confirm_msg = "<p>Your reservation at <b>Bar Del Born</b> is confirmed for <b>#{@res_time}</b> on <b>#{@res_date}</b>.</p>"
 
   @res_confirm_msg = "#{@res_confirm_msg} <table>"
   @res_confirm_msg = "#{@res_confirm_msg} <th>"
@@ -62,15 +62,14 @@ post '/reservation_confirm' do
   @res_confirm_msg = "#{@res_confirm_msg} <td>Last Name</td><td>#{@lastname}</td>"
   @res_confirm_msg = "#{@res_confirm_msg} </tr>"
   @res_confirm_msg = "#{@res_confirm_msg} <tr>"
-  @res_confirm_msg = "#{@res_confirm_msg} <td>Email</td><td>#{@email}</td>"
-  @res_confirm_msg = "#{@res_confirm_msg} </tr>"
-  @res_confirm_msg = "#{@res_confirm_msg} <tr>"
   @res_confirm_msg = "#{@res_confirm_msg} <td>Contact Number</td><td>#{@res_contact}</td>"
   @res_confirm_msg = "#{@res_confirm_msg} </tr>"
   @res_confirm_msg = "#{@res_confirm_msg} </table>"
 
+  # @res_confirm_page is displayed on the reservation_confirm.erb - sans image
   @res_confirm_page = "<div id=#{34.chr}confirmed_reservation#{34.chr}>#{@res_confirm_msg}</div>"
 
+  # image is sent out on email only
   img_email = "<img src='https://mrandmrssmith-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/ABaC.png'>"
   @res_confirm_msg = "#{@res_confirm_msg} <p>#{img_email}</p>"
 

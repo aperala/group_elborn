@@ -6,7 +6,6 @@ body {
 }
 
 header {
-  /*background-color: #FFFFF0;*/
   top: 0;
   position: fixed;
   z-index: 1;
@@ -54,7 +53,6 @@ canvas {
 #vimeo {
   width: 100%;
   height: 421px; 
-  /*float: right;*/
 }
 /* ABOUT PAGE STYLES -- END */
 
@@ -78,7 +76,6 @@ canvas {
 #map_canvas {
   width: 600px;
   height: 450px;
-  /*float: right;*/
   background-color: #ccc;
 }
 
@@ -87,8 +84,6 @@ canvas {
   position: relative;
   padding-top: 10px;
   font-family: 'Lato', serif;
-  /*top: 450px;
-  left: 540px;*/
 }
 
 #comment_form {
@@ -114,14 +109,14 @@ canvas {
    font-family: 'Lato', 'Helvetica Neue',Helvetica,sans-serif;
    text-decoration: none;
    vertical-align: middle;
-   min-width:300px;
-   padding:20px;
-   width:360px;
+   min-width: 300px;
+   padding: 20px;
+   width: 360px;
 }
 
 .submit_container {
-   margin:8px 0;
-   text-align:right;
+   margin: 8px 0;
+   text-align: right;
 }
 
 .submit_button {
@@ -179,14 +174,13 @@ canvas {
   top: 10;
   left: 10px;
   width: 95%;
-  /*margin-top: 100px;*/
   padding: 5px;
   padding-top: 10px;
   margin: 0 auto;
-  /*background-color: #FFFFF0;*/
   z-index: -1;
 }
 
+/* NAVIGATION BAR STYLES - START */
 /* style menu buttons */
 .menu_button {
   font-size: 30px;
@@ -198,8 +192,6 @@ canvas {
 }
 
 .menu_button:hover {
-  /*background: rgba(0,0,0,0.4); 
-  color:rgba(0,0,0,0.8); */
   color: rgb(255,255,255);
   text-shadow: 2px 2px 4px #000000;
 }
@@ -213,6 +205,44 @@ canvas {
 a:visited {
   color: rgb(21,21,21);
 }
+
+/* Make the menu sticky to the top of page */
+#main_menu {
+  position: fixed;
+  top: 0;
+  left: 5px;
+  width: 90%;
+  border: none;
+  z-index: 2;
+  height: 40px;
+  text-align: center;
+  padding-bottom: 10px;
+  color: rgb(0,0,0); 
+}
+
+/* Remove the underline from the anchors in the menu */
+#main_menu a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 12px;
+}
+
+/* Remove default padding from the menu list - i.e. the bullets */
+#main_menu ul {
+  height: auto;
+  margin: 5px;
+}
+
+/* set the menu to display horizontally, with spacing between menu items */
+#main_menu li {
+  display: inline;
+  line-height: 20px;
+  padding: 10px 10px 20px 20px;
+  position: static;
+  opacity: 0.9;
+}
+
+/* NAVIGATION BAR STYLES - END */
 
 /* RESERVATION PAGE STYLES -- START */
 .form_container_res {
@@ -259,8 +289,8 @@ a:visited {
 }
 
 .submit_container_res {
-   margin:8px 0;
-   text-align:right;
+   margin: 8px 0;
+   text-align: right;
    clear: both;
 }
 
@@ -274,18 +304,14 @@ a:visited {
   float: right;
 }
 
-#confirmed_reservation table {
-  display: block;
-  position: absolute;
-  /*top: 100px;*/
-  padding-top: 40px;
-  margin-top: 40px;
-  width: 80%;
-  height: 70%;
-  margin: 30px auto;
-  text-align: left;
-  font-family: 'Lato', sans-serif;
+#res_wrapper {  
   background-color: rgba(255, 255, 255, 0.7);
+  height: 70%;
+  width: 70%;
+  padding-top: 40px;
+  position: relative;
+  margin: 30px auto;
+  display: block;
 }
 
 /* RESERVATION PAGE STYLES -- END */
@@ -315,86 +341,21 @@ a:visited {
 
 .form_container h2 {
    text-shadow: #dedede 0 1px 0;
-   font-size:18px;
+   font-size: 18px;
    margin: 0 0 10px 0;
-   font-weight:bold;
-   text-align:center;
+   font-weight: bold;
+   text-align: center;
 }
 
 .form_title {
-   margin-bottom:10px;
+   margin-bottom: 10px;
    color: #0f0c09;
    text-shadow: #dedede 0 1px 0;
 }
 /* ALL FORMS STYLES -- END */
-   
-#outer_container {
-  position: relative;
-  left: 5px;
-  width: 100%;
-  margin-top: 0;
-  padding: 5px;
-  margin: 0 auto;
-  z-index: 10;  /* had to set z-index of the page content outer container same as the canvas z-index */
-}
 
-/* Make the menu sticky to the top of page */
-#main_menu {
-  position: fixed;
-  top: 0;
-  left: 5px;
-  width: 90%;
-  border: none;
-  z-index: 2;
-  height: 40px;
-  text-align: center;
-  padding-bottom: 10px;
-  color: rgb(0,0,0); 
-}
 
-/* Remove the underline from the anchors in the menu */
-#main_menu a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 0 12px;
-}
-
-/* Remove default padding from the menu list - i.e. the bullets */
-#main_menu ul {
-  height: auto;
-  margin: 5px;
-}
-
-/* set the menu to display horizontally, with spacing between menu items */
-#main_menu li {
-  display: inline;
-  line-height: 20px;
-  padding: 10px 10px 20px 20px;
-  position: static;
-  opacity: 0.9;
-}
-
-/* sticky footer */
-#footer {
-  position: absolute;
-  bottom: -10;
-  z-index: 1;
-  margin: 0 auto;
-  width: 90%;
-  background-color: rgba(0,0,0, 0.5);
-}
-
-#menu_page {
-  width: 100%;
-  height: 100%;
-  /*background: url(http://www.trbimg.com/img-53a3362b/turbine/hm-el-pulpo-restaurant-tapas-bar-southington-20140619);
-  background-size: cover;
-  background-position: right bottom, left top;
-  background-repeat: no-repeat;
-  background-color: black;*/
-}
-
-/* TABBED LAYOUT ON MENU PAGE -- START */
+/* MENU PAGE STYLES -- START */
 
 .tab_link {
   /*border-top: 1px solid #030608;*/
@@ -478,14 +439,6 @@ a:visited {
   padding-bottom: 10px;
 }
 
-#food {
-  display: block;
-}
-
-#drink {
-  display: none;
-}
-
 /* Menu page food/drink divs */
 .menu_block {
   padding-top: 40px;
@@ -493,7 +446,6 @@ a:visited {
   width: 80%;
   height: 70%;
   margin: 30px auto;
-  /*padding: .5em;*/
   text-align: center;
   font-family: 'Lato', sans-serif;
   background-color: rgba(255, 255, 255, 0.7);
@@ -504,5 +456,39 @@ a:visited {
   list-style-type: none;
 }
 
-/* TABBED LAYOUT ON MENU PAGE -- END */
+#food {
+  display: block;
+}
+
+#drink {
+  display: none;
+}
+
+#menu_page {
+  width: 100%;
+  height: 100%;
+}
+
+/* MENU PAGE STYLES -- END */
+
+   
+#outer_container {
+  position: relative;
+  left: 5px;
+  width: 100%;
+  margin-top: 0;
+  padding: 5px;
+  margin: 0 auto;
+  z-index: 10;  /* had to set z-index of the page content outer container same as the canvas z-index */
+}
+
+/* sticky footer */
+#footer {
+  position: absolute;
+  bottom: -10;
+  z-index: 1;
+  margin: 0 auto;
+  width: 90%;
+  background-color: rgba(0,0,0, 0.5);
+}
 
