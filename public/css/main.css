@@ -33,6 +33,7 @@ canvas {
   width: 200px;
   float: left;
   margin-left: 10px;
+  padding: 1em;
   font-family: 'Lato', sans-serif;
   background-color: rgba(255, 255, 255, 0.8);
   /*border-style: solid; added border to troubleshoot layout on about page*/
@@ -84,6 +85,7 @@ canvas {
   position: relative;
   padding-top: 10px;
   font-family: 'Lato', serif;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 #comment_form {

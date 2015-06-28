@@ -22,12 +22,39 @@ end
 
 get '/menu' do
   @title = "Menu"
+  mandrill = Mandrill::API.new ENV['MANDRILL_APIKEY']
+  message = {to: [{"type"  =>"to",
+                   "email" =>"pbunsee@gmail.com",
+                   "name"  =>"Pranesha"}],
+             subject: "Let's meet for lunch!",
+             from_email: 'pbunsee@gmail.com',
+             text: "How does that sound" }
   erb :menu
 end
 
 post '/contact' do
   @title = "Contact Confirmation"
+  @firstname = params["firstname"]
+  @lastname = params["lastname"]
+  @email = params["email"]
   @your_message = params["your_comments"]
+
+  @contact_confirm_msg = "<p>Dear #{@firstname} #{@lastname},</p>"
+  @contact_confirm_msg = "#{@contact_confirm_msg} <p>Thank you for your comments. We appreciate your feedback.</p>"
+  @contact_confirm_msg = "#{@contact_confirm_msg} <p>Sincerely, El Born Bar</p>"
+  
+  img_email = "<img src='http://farm6.staticflickr.com/5225/5605922398_ff3c8cbedc_z.jpg'>"
+  @contact_confirm_msg = "#{@contact_confirm_msg} <p>#{img_email}</p>"
+
+  mandrill = Mandrill::API.new ENV['MANDRILL_APIKEY']
+  message = {to: [{"type" => "to",
+                 "email"  => "anitaperala@gmail.com",
+                 "name"   => "Anita"}],
+                 subject: "Thank you for your comments on El Born Bar",
+                 from_email: 'anitaperala@gmail.com',
+                 html: "#{@contact_confirm_msg}"
+                }
+  puts mandrill.messages.send(message)
   erb :contact_confirm
 end
 
