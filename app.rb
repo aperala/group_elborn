@@ -80,7 +80,7 @@ post '/reservation_confirm' do
   @res_confirm_msg = "#{@res_confirm_msg} <td>Time</td><td><b>#{@res_time}</b></td>"
   @res_confirm_msg = "#{@res_confirm_msg} </tr>"
   @res_confirm_msg = "#{@res_confirm_msg} <tr>"
-  @res_confirm_msg = "#{@res_confirm_msg} <td>Number of Guests</td><td>#{@res_number}</td>"
+  @res_confirm_msg = "#{@res_confirm_msg} <td>Number of Guests</td><td><b>#{@res_number}</b></td>"
   @res_confirm_msg = "#{@res_confirm_msg} <tr>"
   @res_confirm_msg = "#{@res_confirm_msg} </tr>"
   @res_confirm_msg = "#{@res_confirm_msg} <td>First Name</td><td>#{@firstname}</td>"

@@ -354,6 +354,28 @@ a:visited {
    color: #0f0c09;
    text-shadow: #dedede 0 1px 0;
 }
+
+/* error and error_show classes are for form exception handling */
+.error{
+    display: none;
+    margin-left: 10px;
+}       
+ 
+.error_show{
+    color: red;
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+input.invalid, textarea.invalid{
+    border: 2px solid red;
+}
+ 
+input.valid, textarea.valid{
+    border: 2px solid green;
+}
+
+
 /* ALL FORMS STYLES -- END */
 
 

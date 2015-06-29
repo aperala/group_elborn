@@ -1,4 +1,4 @@
-<form class="form_container_res" action="/reservation_confirm" method="POST">
+<form id="form_reservation" class="form_container_res" action="/reservation_confirm" method="POST">
   <div class="form_title"> 
     <h2>Make Reservation</h2>
   </div>
@@ -29,6 +29,7 @@
   <div class="form_title">Contact Number</div>
   <!--<label for="res_contact">Contact Number</label>-->
   <input class="form_field_res" type="tel" name="res_contact" required><br>
+  <span class="error">Phone format must be either xxx xxx xxxx or +xx xxx xxx xxxx</span>
   </div>
 
   <div class="submit_container_res">
