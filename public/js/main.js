@@ -104,6 +104,7 @@ $('#contact_form').on('submit', function(event){
                 }
                 console.log("contact validateTelNum done!");
               });
+
 });
 
 

@@ -226,6 +226,18 @@ a:visited {
 
 /* RESERVATION PAGE STYLES -- START */
 /*------------------NEW FORM STYLES - START*/
+#res_date {
+   font-family: 'Lato', helvetica, serif;
+   padding: 8.5px 18px;
+   font-size: 14px;
+}
+
+#res_time {
+   font-family: 'Lato', helvetica, serif;
+   padding: 8.5px 18px;
+   font-size: 14px;
+}
+
 .form_container_res {
    position: relative;
    top: 50px;
