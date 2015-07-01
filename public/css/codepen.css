@@ -1,0 +1,78 @@
+body {
+  background: hsl(230, 20%, 15%);
+}
+
+.icons {
+  margin: 100px auto;
+  text-align: center;
+}
+
+.icon {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  border-radius: 50%;
+  
+  -webkit-transition: opacity .25s ease-in-out;
+  
+  background-size: 60%;
+  background-position: center center; 
+  background-repeat: no-repeat;
+}
+
+.icon:hover {
+  -webkit-animation: vibration 0.5s infinite;
+  opacity: 0.6;
+}
+
+.icon-yt {
+  background-image: url("http://i.imgur.com/kce2E7s.png");
+  background-color: hsl(360, 90%, 40%);
+}
+
+.icon-gp {
+  background-image: url("http://i.imgur.com/rAbnN1U.png");
+  background-color: hsl(360, 80%, 50%);
+}
+
+.icon-fb {
+  background-image: url("http://i.imgur.com/HujNYDb.png");
+  background-color: hsl(230, 50%, 40%);
+}
+
+.icon-in {
+  background-image: url("http://i.imgur.com/2Y9rW1r.png");
+  background-color: hsl(220, 60%, 50%);
+}
+
+.icon-tw {
+  background-image: url("http://i.imgur.com/7ZgkBfy.png");
+  background-color: hsl(200, 90%, 60%);
+}
+
+$moveBy: 2px;
+    
+@-webkit-keyframes vibration {
+  0%     {left:-$moveBy; top:-$moveBy;}
+  12.5%  {left:$moveBy; top:0px;}
+  25.0%  {left:-$moveBy; top:$moveBy;}
+  37.5%  {left:0px; top:-$moveBy;}
+  50.0%  {left:0px; top:$moveBy;}
+  62.5%  {left:$moveBy; top:-$moveBy;}
+  75.0%  {left:-$moveBy; top:0;}
+  87.5%  {left:$moveBy; top:$moveBy;}
+  100%   {left:0px; top:$moveBy;}
+}
+@-webkit-keyframes chgop {
+  0%   {opacity: 1.0}
+  100% {opacity: 0.6}
+}
+  /*
+    0%   {background: red; left:0px; top:0px;}
+    25%  {background: yellow; left:200px; top:0px;}
+    50%  {background: blue; left:200px; top:200px;}
+    75%  {background: green; left:0px; top:200px;}
+    100% {background: red; left:0px; top:0px;}
+  */

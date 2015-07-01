@@ -9,7 +9,6 @@ function doLayout() {
                                 canvas_context.drawImage(pic,0,0, my_canvas.width, my_canvas.height)
                                }, false);
 }
-
 window.addEventListener("load", doLayout, false);
 
 function showHideTab(whichTab) {
